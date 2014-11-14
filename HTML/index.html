@@ -13,19 +13,45 @@
 .title-description {
 	font-family: Verdana, Geneva, sans-serif;
 }
+.newversionalert {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+.dropdownmenu {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	position: fixed;
+	right: 100px;
+	left: 100px;
+}
 </style>
+
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+
+<title></title>
 
 <h1 class="welcome" style="text-align:center"><em>Welcome, Students!</em></h1>
 
 <p class="title-description" style="text-align:center">Palo Alto Prep&#39;s new student-only website.</p>
-<p style="text-align:center"><a href="Help.html" target="_blank"><input name="help" type="button" value="Help and Information" /></a><a href="http://accessmystudent.com/paloaltoprep/" target="_blank"><input name="Aeries" type="button" value="Aeries" /></a><input name="asb" type="button" value="ASB Notifications" /><a href="http://goo.gl/forms/PWEw4jiWM3" target="_blank"><input name="unblock" type="button" value="Unblock a Website" /></a></p>
-<p style="text-align:center">click <a href="paprep.html">here</a> to visit the newer version of this website</p>
+<form name="form" id="form">
+  <select name="jumpMenu" size="1" class="dropdownmenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+    <option selected>Useful Links</option>
+    <option value="help.html">Help + Info</option>
+    <option value="https://accessmystudent.com/paloaltoprep">Aeries Browser Interface</option>
+    <option>ASB Notifications</option>
+    <option value="http://goo.gl/forms/PWEw4jiWM3">Request form for getting a website unblocked</option>
+  </select>
+</form>
+<p class="newversionalert" style="text-align:center">click <a href="paprep.html"><em>here</em></a> to visit the newer version of this website (&quot;Aidan's Fork&quot;)</p>
 
 <h2 class="VideoBoard" style="text-align:center"><u>Video Board</u></h2>
 
 <p style="text-align:center"><iframe frameborder="0" height="299" src="https://docs.google.com/presentation/d/1RvVvfEkH0xu5GmGupX_AADebdzpkuXGTs_J-QVVgEUg/embed?start=true&amp;loop=true&amp;delayms=3000" width="480"></iframe></p>
 
-<p style="text-align:center"><cite>Made by the Palo Alto Prep Linux Club 2014</cite></p>
+<p style="text-align:center"><cite>Made by the Palo Alto Prep Linux Club</cite></p>
 <p style="text-align:center"><a href="credits.html" target="_blank">
   <input name="credits" type="button" value="Credits" />
 </a></p>
